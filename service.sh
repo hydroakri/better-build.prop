@@ -49,10 +49,5 @@ fi
     fi
 }&
 
-# hide aosp
-REMOVE="
-/system/addon.d
-"
-
 echo 1 > /sys/kernel/oplus_display/dimlayer_hbm
 cmd package bg-dexopt-job
