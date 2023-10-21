@@ -1,0 +1,32 @@
+# Basic MagiskHide properties
+
+# RootBeer, Microsoft
+ro.build.tags=release-keys
+
+# Samsung
+ro.boot.warranty_bit=0
+ro.vendor.boot.warranty_bit=0
+ro.vendor.warranty_bit=0
+ro.warranty_bit=0
+
+# OnePlus
+ro.is_ever_orange=0
+
+# SafetyNet
+ro.boot.verifiedbootstate=green
+ro.boot.veritymode=enforcing
+vendor.boot.vbmeta.device_state=locked
+
+# Other
+ro.build.type=user
+ro.debuggable=0
+ro.secure=1
+
+# optimize parameter
+persist.sys.scrollingcache=3
+profiler.force_disable_ulog=1
+logcat.live=disable
+ro.kernel.checkjni=0
+ro.config.nocheckin=1
+wifi.supplicant_scan_interval=300
+pm.sleep_mode=2
