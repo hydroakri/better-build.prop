@@ -49,7 +49,6 @@ fi
     fi
 }&
 
-echo 1 > /sys/kernel/oplus_display/dimlayer_hbm
 while :; do
     cmd package bg-dexopt-job
     sleep 1d
