@@ -13,7 +13,3 @@ if [[ "$(getprop ro.build.version.sdk)" -lt 26 ]]; then
 fi
 
 chmod 755 "$MODPATH/service.sh" "$MODPATH/post-fs-data.sh"
-
-REMOVE="
-/system/addon.d
-"
