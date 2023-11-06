@@ -1,6 +1,6 @@
 id=betterprop
-name=SafetyNetFix+build.prop优化+隐藏类原生
+name=build.prop优化
 version=v2.4.0
 versionCode=20400
 author=hydroakri
-description=SafetyNetFix+build.prop优化
+description=build.prop优化
