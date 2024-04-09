@@ -1,6 +1,6 @@
 id=betterprop
 name=build.prop优化
-version=v2.4.1
+version=v2.4.2
 versionCode=20400
 author=hydroakri
 description=build.prop优化+dexopt+compiledex2oat
