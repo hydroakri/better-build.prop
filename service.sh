@@ -1,6 +1,8 @@
 #!/system/bin/sh
 sleep 100
-echo conservative > /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+for cpu in /sys/devices/system/cpu/cpu*/; do
+    echo conservative > "$cpu/cpufreq/scaling_governor"
+done
 echo simple_ondemand > /sys/kernel/gpu/gpu_governor
 hour=$(date +'%H')
 while :; do
