@@ -20,13 +20,13 @@ while :; do
     settings delete global device_idle_constants
     settings put global device_idle_constants "inactive_to=30000,sensing_to=0,locating_to=0,location_accuracy=20.0,motion_inactive_to=0,idle_after_inactive_to=0,idle_pending_to=300000,max_idle_pending_to=600000,idle_pending_factor=2.0,idle_to=3600000,max_idle_to=21600000,idle_factor=2.0,min_time_to_alarm=3600000,max_temp_app_whitelist_duration=300000,mms_temp_app_whitelist_duration=60000,sms_temp_app_whitelist_duration=20000"
 
-    # specific App settings
-    am set-bg-restriction-level --user 0 com.tencent.mm
-    am set-bg-restriction-level --user 0 com.tencent.mobileqq
-    cmd appops set com.tencent.mm WAKE_LOCK ignore
-    cmd appops set com.tencent.mobileqq RUN_ANY_IN_BACKGROUND ignore
-    dumpsys deviceidle whitelist -com.tencent.mm
-    dumpsys deviceidle whitelist -com.tencent.mobileqq
+    # # specific App settings
+    # am set-bg-restriction-level --user 0 com.tencent.mm
+    # am set-bg-restriction-level --user 0 com.tencent.mobileqq
+    # cmd appops set com.tencent.mm WAKE_LOCK ignore
+    # cmd appops set com.tencent.mobileqq RUN_ANY_IN_BACKGROUND ignore
+    # dumpsys deviceidle whitelist -com.tencent.mm
+    # dumpsys deviceidle whitelist -com.tencent.mobileqq
 
     device_config put device_idle flex_time_short 0
     device_config put device_idle light_after_inactive_to 30000 #
