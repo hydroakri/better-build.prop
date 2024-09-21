@@ -1,3 +1,0 @@
-REMOVE="
-/system/addon.d
-"
