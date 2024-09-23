@@ -2,7 +2,7 @@
 sleep 100
 
 for cpu in /sys/devices/system/cpu/cpu*/; do
-    echo conservative > "$cpu/cpufreq/scaling_governor"
+    echo schedutil > "$cpu/cpufreq/scaling_governor"
 done
 echo simple_ondemand > /sys/kernel/gpu/gpu_governor
 
