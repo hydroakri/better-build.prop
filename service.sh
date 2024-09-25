@@ -1,10 +1,10 @@
 #!/system/bin/sh
 sleep 100
 
-for cpu in /sys/devices/system/cpu/cpu*/; do
-    echo schedutil > "$cpu/cpufreq/scaling_governor"
-done
-echo simple_ondemand > /sys/kernel/gpu/gpu_governor
+# for cpu in /sys/devices/system/cpu/cpu*/; do
+#     echo schedutil > "$cpu/cpufreq/scaling_governor"
+# done
+# echo simple_ondemand > /sys/kernel/gpu/gpu_governor
 
 hour=$(date +'%H')
 while :; do
