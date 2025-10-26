@@ -43,10 +43,10 @@ while :; do
     device_config put device_idle min_light_maintenance_time 5000 #
     device_config put device_idle min_deep_maintenance_time 30000 #
     device_config put device_idle inactive_to 0 #
-    device_config put device_idle sensing_to 0 #
-    device_config put device_idle locating_to 0 #
+    device_config put device_idle sensing_to 10000 #
+    device_config put device_idle locating_to 10000 #
     device_config put device_idle location_accuracy 20.0m
-    device_config put device_idle motion_inactive_to 0 #
+    device_config put device_idle motion_inactive_to 60000 #
     device_config put device_idle motion_inactive_to_flex 0 #
     device_config put device_idle idle_after_inactive_to 900000 #
     device_config put device_idle idle_pending_to 60000 #
