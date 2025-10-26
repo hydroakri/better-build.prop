@@ -67,9 +67,7 @@ while :; do
 
     device_config put activity_manager_native_boot use_freezer true
     device_config put activity_manager_native_boot freeze_debounce_timeout 5000
-    device_config set_sync_disabled_for_tests persistent
 
     dumpsys deviceidle enable
-    dumpsys deviceidle force-idle
     sleep 3600
 done
