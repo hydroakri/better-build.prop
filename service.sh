@@ -15,7 +15,7 @@ while :; do
     fi
 
     settings delete global battery_saver_constants
-    settings put global battery_saver_constants "advertise_is_enabled=true,enable_datasaver=false,enable_night_mode=false,disable_launch_boost=true,disable_vibration=false,disable_animation=false,disable_soundtrigger=false,defer_full_backup=false,defer_keyvalue_backup=false,enable_firewall=true,location_mode=4,enable_brightness_adjustment=true,adjust_brightness_factor=0.8,force_all_apps_standby=true,force_background_check=true,disable_optional_sensors=true,disable_aod=false,enable_quick_doze=true"
+    settings put global battery_saver_constants "advertise_is_enabled=true,enable_datasaver=true,enable_night_mode=false,disable_launch_boost=true,disable_vibration=false,disable_animation=false,disable_soundtrigger=false,defer_full_backup=false,defer_keyvalue_backup=false,enable_firewall=true,location_mode=0,enable_brightness_adjustment=true,adjust_brightness_factor=0.5,force_all_apps_standby=true,force_background_check=true,disable_optional_sensors=false,disable_aod=false,enable_quick_doze=true"
     # device_idle_constants is only aviliable under Android 11
     settings delete global device_idle_constants
     settings put global device_idle_constants "inactive_to=30000,sensing_to=0,locating_to=0,location_accuracy=20.0,motion_inactive_to=0,idle_after_inactive_to=0,idle_pending_to=300000,max_idle_pending_to=600000,idle_pending_factor=2.0,idle_to=3600000,max_idle_to=21600000,idle_factor=2.0,min_time_to_alarm=3600000,max_temp_app_whitelist_duration=300000,mms_temp_app_whitelist_duration=60000,sms_temp_app_whitelist_duration=20000"
